@@ -38,8 +38,8 @@ This project is a **Server-Based Plant Monitoring System** using an **ESP32 micr
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/plant-monitoring-system.git
-cd plant-monitoring-system
+git clone https://github.com/yourusername/plant-monitoring-system_V1.0.git
+cd plant-monitoring-system_V1.0
 ````
 ### Step 2: Configure WiFi Credentials
 1. Open the `Plant_Monitoring_system_V1.0.ino` file in the Arduino IDE.
