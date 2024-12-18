@@ -1,9 +1,22 @@
-# Server-Based Plant Monitoring System
+<div align="center">
 
-## Overview
-This project is a **Server-Based Plant Monitoring System** using an **ESP32 microcontroller**. It integrates multiple sensors to monitor soil moisture, temperature, and humidity levels in real time. The data is displayed on a web-based dashboard hosted by the ESP32, allowing users to access it from any browser.
+  <h1><a href="https://github.com/Vinayakahr10/Vinayakahr10-Plant_Monitoring_System_V1.0"> Plant Monitoring System</a></h1>
 
-## Features
+>A server-based plant monitoring system using ESP32 to track soil moisture, temperature, and humidity.
+
+
+This project is a Server-Based Plant Monitoring System using an ESP32 microcontroller. It integrates multiple sensors to monitor soil moisture, temperature, and humidity levels in real time. The data is displayed on a web-based dashboard hosted by the ESP32, allowing users to access it from any browser.
+
+Real-time plant monitoring with an interactive web dashboard hosted by ESP32.
+
+
+</div>
+
+<hr>
+<br>
+
+
+## ``Features``
 - **Real-time Sensor Monitoring**:
   - Soil Moisture
   - Temperature
@@ -17,15 +30,14 @@ This project is a **Server-Based Plant Monitoring System** using an **ESP32 micr
   - Detects and handles invalid sensor readings gracefully.
 
 ---
-
-## Requirements
-### Hardware:
+## ``Requirements``
+### `Hardware:`
 - ESP32 microcontroller
 - DHT22 Sensor
 - Soil Moisture Sensor
 - Breadboard and connecting wires
 
-### Software:
+### `Software:`
 - Arduino IDE or PlatformIO
 - ESP32 board support in Arduino IDE
 - Libraries:
@@ -33,21 +45,20 @@ This project is a **Server-Based Plant Monitoring System** using an **ESP32 micr
     
 
 ---
+## ``Installation``
 
-## Installation
-
-### Step 1: Clone the Repository
+### `Step 1: Clone the Repository`
 ```bash
-git clone https://github.com/yourusername/plant-monitoring-system_V1.0.git
-cd plant-monitoring-system_V1.0
-````
-### Step 2: Configure WiFi Credentials
+git clone https://github.com/Vinayakahr10/Vinayakahr10-Plant_Monitoring_System_V1.0
+cd Vinayakahr10-Plant_Monitoring_System_V1.0
+```
+### `Step 2: Configure WiFi Credentials`
 1. Open the `Plant_Monitoring_system_V1.0.ino` file in the Arduino IDE.
 2. Replace the placeholder WiFi credentials in the following lines:
    ```cpp
    const char* ssid = "YOUR_SSID";       // Replace with your WiFi SSID
    const char* password = "YOUR_PASSWORD"; // Replace with your WiFi password
-### Step 3: Set Up the Hardware
+### `Step 3: Set Up the Hardware`
 1. **Connect the DHT22 Sensor**:
    - Connect the **Data Pin** of the DHT22 to **GPIO 15** on the ESP32.
    - Connect the **VCC Pin** to **5V** and **GND Pin** to **GND**.
@@ -61,7 +72,7 @@ cd plant-monitoring-system_V1.0
 
 4. Double-check the wiring to ensure all connections are secure and correct.
 
-### Step 4: Access the Dashboard
+### `Step 4: Access the Dashboard`
 1. After uploading the code to the ESP32, open the **Serial Monitor** in the Arduino IDE.
    - Ensure the baud rate is set to **115200**.
 2. Once the ESP32 connects to your WiFi network, it will display the **IP address** assigned by the router on the Serial Monitor. For example:`http://192.168.1.100`
@@ -73,8 +84,9 @@ cd plant-monitoring-system_V1.0
 - Temperature
 - Soil Moisture
 6. Click the **Refresh** button on the dashboard to manually update the sensor readings, or wait for the data to auto-refresh every 5 seconds.
-## Usage
-### Dashboard Features:
+---
+## ``Usage``
+### `Dashboard Features:`
 1. **Real-Time Monitoring**:
    - Displays the latest readings for:
      - **Humidity** (in percentage)
@@ -99,8 +111,7 @@ cd plant-monitoring-system_V1.0
    - This can be used for further integration with other IoT applications or systems.
 
 ---
-
-## Customization
+## ``Customization``
 You can modify the project as follows:
 1. **Change Dashboard Appearance**:
    - Edit the `getPage()` function in the code to customize the HTML/CSS for the web dashboard.
@@ -116,21 +127,7 @@ You can modify the project as follows:
    - You can connect additional sensors (e.g., light sensors, pH sensors) and extend the dashboard by updating the `getPage()` function and `/get-sensor-data` endpoint.
 
 ---
-
-## Known Issues
-1. **WiFi Connection Failure**:
-   - If the ESP32 cannot connect to WiFi after 10 seconds, it will restart automatically.
-   - Ensure your WiFi credentials are correct and the network is active.
-
-2. **Invalid Sensor Readings**:
-   - If the DHT22 or soil moisture sensor returns `NaN`, check the sensor connections and power supply.
-
-3. **Browser Compatibility**:
-   - The dashboard is tested on modern browsers like Chrome, Firefox, and Edge. Older browsers may not render the design correctly.
-
----
-
-## Future Enhancements
+## ``Future Enhancements``
 Planned improvements for this project:
 1. **Data Logging**:
    - Store sensor readings on an SD card or cloud platform for historical analysis.
@@ -144,14 +141,33 @@ Planned improvements for this project:
    - Send alerts via email or SMS when soil moisture drops below a threshold.
 
 ---
+<details>
+<summary>Known Issues</summary>
 
-## License
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute it, provided proper attribution is given. See the `LICENSE` file for more details.
+### 1. WiFi Connection Failure
+- If the ESP32 cannot connect to WiFi after 10 seconds, it will restart automatically.
+- Ensure your WiFi credentials are correct and the network is active.
+
+### 2. Invalid Sensor Readings
+- If the DHT22 or soil moisture sensor returns NaN, check the sensor connections and power supply.
+
+### 3. Browser Compatibility
+- The dashboard is tested on modern browsers like Chrome, Firefox, and Edge.
+- Older browsers may not render the design correctly.
+
+</details>
 
 ---
 
-## Contributing
-Contributions are welcome! Here’s how you can help:
 1. **Report Issues**: Found a bug? Open an issue in the repository.
-2. **Improve Documentation**: Help enhance this `README.md`.
-3. **Add Features**: Fork the repository, implement a feature, and submit a pull request.
+2. **Add Features**: Fork the repository, implement a feature, and submit a pull request.
+
+
+<br>
+<br>
+<br>
+<p align="center">
+Made with <3 by <a href="https://github.com/Vinayakahr10">@Vinayakahr10</a>
+<br>
+
+</p>
